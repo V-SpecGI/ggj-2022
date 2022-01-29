@@ -217,8 +217,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2050514574}
   - component: {fileID: 2050514573}
+  - component: {fileID: 2050514575}
+  - component: {fileID: 2050514577}
+  - component: {fileID: 2050514578}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -291,3 +294,79 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2050514575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050514572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc87e0f45c540c948884f704bca04076, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonNames: []
+  joysticks: []
+  _isControllerConnected: 0
+  menuName: 
+  Controller: 
+  UpKeyCode_string: W
+  DownKeyCode_string: S
+  LeftKeyCode_string: A
+  RightKeyCode_string: D
+  FireKeyCode_string: F
+  UpKeyCode_string1: W
+  DownKeyCode_string1: S
+  LeftKeyCode_string1: A
+  RightKeyCode_string1: D
+  FireKeyCode_string1: F
+  UpKeyCode_string2: T
+  DownKeyCode_string2: G
+  LeftKeyCode_string2: F
+  RightKeyCode_string2: 'L '
+  RightRotKeyCode_string: right
+  LeftRotKeyCode_string: left
+  FireKeyCode_string2: C
+  SwapControllerJoySticksEnabled: 0
+  isPaused: 0
+  currentProfile: Profile 1
+  horizontal: 0
+  vertical: 0
+  rotation: {x: 0, y: 0, z: 0}
+  currentControl: 0
+--- !u!50 &2050514577
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050514572}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &2050514578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050514572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9d9684c5c7e9e4a827bef4e6ac1909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothTime: 0.2
+  runSpeed: 20
