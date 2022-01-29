@@ -112,7 +112,7 @@ TextureImporter:
         width: 37
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -133,7 +133,7 @@ TextureImporter:
         width: 37
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,7 +154,7 @@ TextureImporter:
         width: 37
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -175,7 +175,7 @@ TextureImporter:
         width: 23
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,7 +196,7 @@ TextureImporter:
         width: 36
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -217,7 +217,7 @@ TextureImporter:
         width: 22
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -238,7 +238,7 @@ TextureImporter:
         width: 23
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -259,7 +259,7 @@ TextureImporter:
         width: 35
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -280,7 +280,7 @@ TextureImporter:
         width: 24
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -301,7 +301,7 @@ TextureImporter:
         width: 25
         height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -322,7 +322,7 @@ TextureImporter:
         width: 35
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -343,7 +343,7 @@ TextureImporter:
         width: 23
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -351,6 +351,888 @@ TextureImporter:
       bones: []
       spriteID: c118ba6cc4544954ba1a8a7b869150e1
       internalID: -1426892441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Shield_Down_1
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 447
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f093578b862de4197cd934c0c87b32
+      internalID: -1960890412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Shield_Left_1
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 446
+        width: 32
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663b7ccf3ab2e9f498a6041adf356338
+      internalID: 101703773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Shield_Down_2
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 385
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ddadd195b7bfe54aa8f156e2bdc554d
+      internalID: 1243552706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Shield_Left_2
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 386
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9a1bd2a9b557141aed4ddb02a6ff63
+      internalID: 1602820885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Shield_Down_3
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 322
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5da2ec8e315e504fad113650ae4e177
+      internalID: 1277965345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Shield_Left_3
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 326
+        width: 33
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b563ddd35ada341be71532934f0f42
+      internalID: 1244468791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Shield_Up_1
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 448
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64722d78f1e10374ca9f81fc2cdf2562
+      internalID: -25262337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Shield_Up_2
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 386
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30baf677f50d3a4899bd37a250165ad
+      internalID: -169079721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Shield_Up_3
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 324
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b244b280fb31c14cbc94de0e2a77d59
+      internalID: -1462476865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Shield_Right_1
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 447
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfce157f035c3fc4c8c7a858ad3f02f4
+      internalID: 1103097754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Shield_Right_2
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 386
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7283eab67006dc48845db7f9bb1e9ac
+      internalID: -933631093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Shield_Right_3
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 326
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55dc4f5d63efc1846afb4866a36a447b
+      internalID: -1701662653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Spear_Down_1
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 243
+        width: 38
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c014656692069b4b951d9c97e2ae75b
+      internalID: 470009596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Shield_Up
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 448
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3071e40fc78f6cd41afb566cbf486add
+      internalID: -1253512739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Shield_Right
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 445
+        width: 13
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900d049cb01bce647a1e229ce5fd25ac
+      internalID: -334501997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Shield_Left
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 447
+        width: 10
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a86a91830453c04e87b02091f558a70
+      internalID: -1743140113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Shield_Down
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 450
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb30d75be0035644a6ecf0c1ce57851
+      internalID: -1506026642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Spear_Left
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 363
+        width: 39
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0ae4f2d13b7fe4c94781bcb30c24ee
+      internalID: 1462638448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Spear_RIght
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 361
+        width: 37
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1539f0fa7c9c0b4ab3881a25c66d458
+      internalID: 306225894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Spear_Down_2
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 169
+        width: 36
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a30672b7fe078d42b6849ff6368d590
+      internalID: 729516723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Spear_Down_3
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 84
+        width: 35
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8bbaa8de0faf5438a4e5d3c1fa137d
+      internalID: 2142116809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Spear_Left_1
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 244
+        width: 32
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45bf4f3d26dae3940b860120f0783f61
+      internalID: -780054327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Spear_Left_2
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 168
+        width: 32
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff92c2e18392aa140a1fb4c661db4ceb
+      internalID: -2135713867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Spear_Left_3
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 86
+        width: 33
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a224fa266dc68544a104a8258462ecd
+      internalID: -449027161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Spear_Up_1
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 243
+        width: 37
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36caa780ad4971c46a425f41dfcaa164
+      internalID: 1220654958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Spear_Up_2
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 167
+        width: 35
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea91d82fa493eb44a072bad50624e5f
+      internalID: -846666213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Spear_Up_3
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 82
+        width: 37
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19278ca04a451942a82f3af4547af10
+      internalID: 199491410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Spear_Right_1
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 243
+        width: 32
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4cd4bead64fb7d4c93738bdb1f2fa16
+      internalID: -461197031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Spear_Right_2
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 169
+        width: 31
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19348c17276229a4892f7a5e2a4b329b
+      internalID: -410742883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Spear_Right_3
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 85
+        width: 32
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd524f3a503c9a9489412d51e2652214
+      internalID: 999380640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Hurt_Down_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 229
+        width: 36
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e7ebdc2e4bc8140b3e0f0b8f9ec983
+      internalID: 347925970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Hurt_Down_2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 167
+        width: 36
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e3a201561cb4c4c8ef9f5a38f83c02
+      internalID: 120018840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Hurt_Down_3
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 104
+        width: 35
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d9925fa7262eb4daa9ce62dbe4f7c6
+      internalID: 1772278560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Hurt_Left_1
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 227
+        width: 23
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a8dde4d82687e4cbc05da69976d916
+      internalID: 439115472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Hurt_Left_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 167
+        width: 23
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6714fed290196c646a7cda16f114a524
+      internalID: 1936630614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Hurt_Left_3
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 106
+        width: 22
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66c1261c54400b46bd2b64e61def525
+      internalID: -630695098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Hurt_Up_1
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 228
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a854f6e1f98f449a19b1293bb1563b
+      internalID: -2114881834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Hurt_Up_2
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 167
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2df8b48e8d91b449887642ecd5ee989
+      internalID: 530779830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Hurt_Up_3
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 104
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1738ee81a42964484c047e2b176c95
+      internalID: -770547618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Hurt_Right_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 229
+        width: 22
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c5c1aebc982e94db9f4b2c032e063c
+      internalID: 711498560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Hurt_Right_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 168
+        width: 24
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6742f56bbed27b74cac2475afd0ebcd1
+      internalID: -639678138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Hurt_Right_3
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 107
+        width: 22
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7ab1c8386f2f440b26aec092ccd769
+      internalID: 1052947981
       vertices: []
       indices: 
       edges: []
@@ -367,17 +1249,59 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Knight_Down_2: -441776214
-      Knight_Left_3: -1859347051
-      Knight_Right_3: -1426892441
-      Knight_Up_1: 1285149098
+      Knight_Shield_Left_1: 101703773
+      Knight_Spear_Down_1: 470009596
+      Knight_Shield_Left: -1743140113
+      Knight_Hurt_Right_3: 1052947981
+      Knight_Shield_Down_3: 1277965345
+      Knight_Spear_Down_3: 2142116809
+      Knight_Shield_Right: -334501997
+      Knight_Spear_Right_1: -461197031
+      Knight_Spear_Up_2: -846666213
+      Knight_Spear_Left_1: -780054327
+      Knight_Hurt_Down_3: 1772278560
       Knight_Down_3: -386653920
-      Knight_Right_2: -879111208
+      Knight_Shield_Down: -1506026642
+      Knight_Spear_Left: 1462638448
       Knight_Up_2: -399887676
+      Knight_Spear_Up_1: 1220654958
+      Knight_Spear_Up_3: 199491410
+      Knight_Hurt_Left_3: -630695098
       Knight_Up_3: -2108904773
       Knight_Left_2: -297025746
       Knight_Right_1: 638077170
+      Knight_Shield_Down_2: 1243552706
+      Knight_Spear_Left_2: -2135713867
+      Knight_Shield_Left_3: 1244468791
+      Knight_Hurt_Down_1: 347925970
+      Knight_Hurt_Up_1: -2114881834
+      Knight_Hurt_Up_3: -770547618
+      Knight_Spear_Left_3: -449027161
+      Knight_Shield_Left_2: 1602820885
+      Knight_Left_3: -1859347051
+      Knight_Shield_Up_1: -25262337
+      Knight_Shield_Right_1: 1103097754
+      Knight_Shield_Right_2: -933631093
+      Knight_Hurt_Up_2: 530779830
+      Knight_Spear_Down_2: 729516723
+      Knight_Shield_Up_3: -1462476865
+      Knight_Right_3: -1426892441
+      Knight_Hurt_Right_1: 711498560
+      Knight_Up_1: 1285149098
+      Knight_Shield_Up_2: -169079721
+      Knight_Hurt_Left_1: 439115472
+      Knight_Spear_Right_3: 999380640
+      Knight_Right_2: -879111208
+      Knight_Hurt_Left_2: 1936630614
+      Knight_Hurt_Down_2: 120018840
+      Knight_Spear_RIght: 306225894
+      Knight_Spear_Right_2: -410742883
+      Knight_Hurt_Right_2: -639678138
       Knight_Left_1: -2113314546
+      Knight_Shield_Down_1: -1960890412
+      Knight_Shield_Right_3: -1701662653
       Knight_Down_1: -227515881
+      Knight_Shield_Up: -1253512739
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

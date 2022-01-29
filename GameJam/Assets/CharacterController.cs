@@ -14,19 +14,24 @@ public class CharacterController : MonoBehaviour
     [SerializeField][Range(.01f,.5f)] float smoothTime = 0.2f;
     [SerializeField] [Range(.01f, 20)] private float runSpeed;
 
+    Animator animator;
     void Start()
     {
         input = GetComponent<PlayerInput>();
         body = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
-
+    private void Update()
+    {
+        animator.SetFloat("RightMovement",_horizontal);
+        animator.SetFloat("UpMovement",_vertical);
+    }
     void LateUpdate()
     {
         // Gives a value between -1 and 1
         _horizontal = input.Horizontal; // -1 is left
         _vertical = input.Vertical; // -1 is down
     }
-
     void FixedUpdate()
     {
         if (_horizontal != 0 && _vertical != 0) // Check for diagonal movement
