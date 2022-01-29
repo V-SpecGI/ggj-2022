@@ -17,14 +17,15 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-
+        transform.right = player.position - transform.position;
         timeBtwShots = startTimeBtwShots;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(timeBtwShots <= 0)
+        transform.right = player.position - transform.position;
+        if (timeBtwShots <= 0)
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
             timeBtwShots = startTimeBtwShots;
