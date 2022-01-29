@@ -17,18 +17,17 @@ public class CollectScript : MonoBehaviour
         
     }
 
+    void OnPlayerEnter(Collider2D other){
+        OnTriggerEnter2D(other);
+    }
+
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player")
         {
-            addCollect();
+            CollectManager.instance.addCollect();
             Destroy(gameObject);
         }
-    }
-
-    void addCollect()
-    {
-        collectible++;
-        Debug.Log("Coin! " + collectible);
     }
 }
