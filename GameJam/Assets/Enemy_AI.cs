@@ -19,13 +19,13 @@ public class Enemy_AI : MonoBehaviour
             Health.instance.reduceHealth(0.5);
         }
     }
-/*
+
     void OnCollisionEnter2D(Collision2D collide){
         float knockback = 3500;
         Vector2 dir = (transform.position - collide.transform.position).normalized;
         GetComponent<Rigidbody2D>().AddForce(dir * knockback);
     }
-*/
+
     private void Update() {
         Vector3 direction = player.position - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;

@@ -32,6 +32,7 @@ public class Health : MonoBehaviour
             health = numOfHearts;
         }
         if(health <= 0){
+            die();
             Destroy(gameObject);
         }
         
@@ -93,7 +94,12 @@ public class Health : MonoBehaviour
         }
     }
 
-    float getHealth() {
+    public float getHealth() {
         return health;
+    }
+
+    private void die(){
+        LevelManager.instance.GameOver();
+        gameObject.SetActive(false);
     }
 }
