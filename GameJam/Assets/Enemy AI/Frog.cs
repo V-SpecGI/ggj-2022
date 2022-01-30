@@ -10,7 +10,7 @@ public class Frog : MonoBehaviour
     public int yPos;
     public int flyCount;
     private bool pause;
-    private ArrayList flies = new ArrayList();
+    private List<GameObject> flies = new List<GameObject>();
     private bool croak;
     private double health;
 
@@ -58,8 +58,8 @@ public class Frog : MonoBehaviour
                 //eat fly animation
                 System.Random rnd = new System.Random();
                 int index = rnd.Next(0,6);
-                GameObject flyCurrent = flies[index] as GameObject;
-                Destroy(flyCurrent);
+                Destroy(flies[index]);
+                flies.RemoveAt(index);
                 yield return new WaitForSeconds(1f);
                 // throw fire projectile
                 yield return new WaitForSeconds(1f);
