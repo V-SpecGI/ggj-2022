@@ -177,7 +177,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 12.131305
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -206,7 +206,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
 MonoBehaviour:
@@ -9526,7 +9526,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bddcb03e96a486b4f9a3af0c39a95d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fly: {fileID: 6438110355446095552, guid: 5693634e06e4c1f4b93bfb823f664cd7, type: 3}
+  State: 0
+  flyPrefab: {fileID: 6438110355446095552, guid: 5693634e06e4c1f4b93bfb823f664cd7, type: 3}
   xPos: 0
   yPos: 0
   flyCount: 0
+  maxFlies: 5
+  PauseTime: 50
+  TimeBetweenFlySpawns: 1
+  CroakTime: 3
+  SpitLiveTime: 2
+  flies: []
+  flySpawnMinXY: {x: 3, y: 5}
+  flySpawnMaxXY: {x: 3, y: 5}
+  Spit: {fileID: 644106012776076311, guid: 3017123018748f647bda8b085c986f53, type: 3}

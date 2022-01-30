@@ -1,70 +1,98 @@
 using System.Collections;
 using System.Collections.Generic;
-using System;
 using UnityEngine;
 
 public class Frog : MonoBehaviour
 {
-    public GameObject fly;
-    public float xPos;
-    public int yPos;
-    public int flyCount;
-    private bool pause;
-    private ArrayList flies = new ArrayList();
-    private bool croak;
+    public enum FrogState { SpawningFlies, Croaking, EatingFly,Idle}
+    [SerializeField]private FrogState State = FrogState.SpawningFlies;
+    [SerializeField]private GameObject flyPrefab;
+    [SerializeField] private float xPos, yPos;
+    [SerializeField] private int flyCount, maxFlies = 5;
+    [SerializeField] private float PauseTime = 50f, TimeBetweenFlySpawns = .5f, CroakTime = 3, SpitLiveTime = 2f;
+    [SerializeField]private List<GameObject> flies = new List<GameObject>();
+    [SerializeField] Vector2 flySpawnMinXY, flySpawnMaxXY;
+    [SerializeField] Projectile Spit;
+    Coroutine flySpawn, flyEat, croakingAnimation;
+    private bool isVulnerable, isCroaking;
     private double health;
 
     void Start()
     {
+        State = FrogState.SpawningFlies;
         StartCoroutine((FlyDrop()));
         StartCoroutine((EatFly()));
-        pause = false;
     }
 
     void Update()
-    {   
-        if (flyCount == 0) {
-            croak = false;
-        } else {
-            croak = true;
-        }
-        // please that if croak = true, then knockback.
-        if (croak == false ) {
-            // implement frog taking damage
+    {
+        isVulnerable = flies.Count == 0;
+        switch(State)
+        {
+            case FrogState.SpawningFlies:
+                if(flySpawn == null)
+                {
+                    flySpawn = StartCoroutine((FlyDrop()));
+                }
+                break;
+            case FrogState.EatingFly:
+                if(flyEat == null)
+                {
+                    flyEat = StartCoroutine((EatFly()));
+                }    
+                break;
+            case FrogState.Croaking:
+                if(!isCroaking)
+                {
+                    isCroaking = true;
+                    croakingAnimation = StartCoroutine(Croak());
+                }
+                break;
         }
     }
 
     // sometimes the flies don't show and I don't know why
     // Spawns flies randomly
     IEnumerator FlyDrop() {
-        while (flyCount < 5) {
-            while (pause) {
-                yield return new WaitForSeconds (50f);
-                pause = false;
-            }
-            xPos = UnityEngine.Random.Range(-3, 15); // add 1 to max
-            yPos = UnityEngine.Random.Range(-11, 8); 
-            flies.Add(Instantiate(fly, new Vector2(xPos, yPos), Quaternion.identity));
-            yield return new WaitForSeconds(0.5f); // 1/2 of a second betweeen spawns
-            flyCount += 1;
+        while (flyCount < maxFlies) 
+        {
+                xPos = Random.Range(-5f, 5); // add 1 to max
+                yPos = Random.Range(-5f,5);
+            print($"X: {xPos}, Y: {yPos}");
+                flies.Add(Instantiate(flyPrefab, new Vector2(transform.position.x + xPos, transform.position.y + yPos), Quaternion.identity));
+                flyCount = flies.Count;
+                yield return new WaitForSeconds(TimeBetweenFlySpawns); // 1/2 of a second betweeen spawns
         }
+        State = FrogState.EatingFly;
+        flySpawn = null;
     }
 
-    IEnumerator EatFly() {
-        if (flyCount == 5) {
-            while (flyCount > 0) {
-                pause = true;
-                //eat fly animation
-                System.Random rnd = new System.Random();
-                int index = rnd.Next(0,6);
-                GameObject flyCurrent = flies[index] as GameObject;
-                Destroy(flyCurrent);
-                yield return new WaitForSeconds(1f);
-                // throw fire projectile
-                yield return new WaitForSeconds(1f);
-                flyCount -= 1;
-            }
+    IEnumerator EatFly() 
+    {
+        while (flyCount > 0) 
+        {
+            //eat fly animation
+            System.Random rnd = new System.Random();
+            int index = rnd.Next(0, flyCount);
+            GameObject flyCurrent = flies[index] as GameObject;
+            Destroy(flyCurrent);
+            flies.RemoveAt(index);
+            yield return new WaitForSeconds(1f);
+            Destroy(Instantiate(Spit, transform.position, Quaternion.identity).gameObject, SpitLiveTime);
+            print("Attack");
+            yield return new WaitForSeconds(3f);
+            flyCount = flies.Count;
         }
-        pause = false;
+        State = FrogState.Croaking;
+        flyEat = null;
+    }
+    IEnumerator Croak()
+    {
+        //PlayCroak Sound
+        yield return new WaitForSeconds(CroakTime);
+        maxFlies += 2;
+        State = FrogState.SpawningFlies;
+        isCroaking = false;
+        croakingAnimation = null;
     }
 }
