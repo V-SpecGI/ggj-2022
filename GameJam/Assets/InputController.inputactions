@@ -40,15 +40,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Button1Hold",
-                    "type": "Button",
-                    "id": "8a4caa3d-65af-438b-9fa1-71ff00c700e9",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "Press(behavior=2)",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -188,7 +179,7 @@
                     "name": "",
                     "id": "d05528b8-f34c-4a5b-9057-c5a4e7ed4182",
                     "path": "<Gamepad>/buttonEast",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "",
                     "action": "Button1",
@@ -199,7 +190,7 @@
                     "name": "",
                     "id": "d1516adf-4323-447b-83c2-d34010ae4a98",
                     "path": "<Mouse>/leftButton",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "",
                     "action": "Button1",
@@ -225,17 +216,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Button2",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3ecb2aff-ad86-4713-99e3-523d24a2bdb2",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Button1Hold",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

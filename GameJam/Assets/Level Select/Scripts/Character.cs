@@ -95,4 +95,9 @@ public class Character : MonoBehaviour
         // the current pin has changed
         _mapManager.UpdateGui();
     }
+
+    public bool IsCurrentPinLevel()
+    {
+        return CurrentPin.SceneToLoad.Contains("Level");
+    }
 }

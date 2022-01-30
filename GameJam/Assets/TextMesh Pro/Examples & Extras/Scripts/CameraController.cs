@@ -57,9 +57,6 @@ namespace TMPro.Examples
             else
                 Application.targetFrameRate = -1;
 
-            if (Application.platform == RuntimePlatform.IPhonePlayer || Application.platform == RuntimePlatform.Android)
-                Input.simulateMouseWithTouches = false;
-
             cameraTransform = transform;
             previousSmoothing = MovementSmoothing;
         }
@@ -79,7 +76,7 @@ namespace TMPro.Examples
         // Update is called once per frame
         void LateUpdate()
         {
-            GetPlayerInput();
+            //GetPlayerInput();
 
 
             // Check if we still have a valid target

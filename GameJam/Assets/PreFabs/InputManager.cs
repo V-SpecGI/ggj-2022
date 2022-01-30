@@ -56,11 +56,13 @@ public class InputManager : MonoBehaviour
     }
     void Button1Pressed()
     {
-        Button1PressedEvent();
+        print("ON");
         Button1Held = true;
+        Button1PressedEvent();
     }
     void Button1Released()
     {
+        print("Off");
         Button1Held = false;
     }
     void Button2Pressed()

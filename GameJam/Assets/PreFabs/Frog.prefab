@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3246464088685254160}
   - component: {fileID: 2949279965633335777}
+  - component: {fileID: 7590404873332759389}
   m_Layer: 0
   m_Name: Frog
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 5041349899503554041}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,3 +85,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7590404873332759389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5041349899503554041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa51495fd6bb4364187450c3fe44efc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  State: 0
+  flyPrefab: {fileID: 6438110355446095552, guid: 5693634e06e4c1f4b93bfb823f664cd7, type: 3}
+  xPos: 0
+  yPos: 0
+  flyCount: 0
+  maxFlies: 5
+  PauseTime: 50
+  TimeBetweenFlySpawns: 0.5
+  CroakTime: 3
+  SpitLiveTime: 2
+  flies: []
+  flySpawnMinXY: {x: -3, y: 3}
+  flySpawnMaxXY: {x: 3, y: 3}
+  Spit: {fileID: 644106012776076311, guid: 3017123018748f647bda8b085c986f53, type: 3}

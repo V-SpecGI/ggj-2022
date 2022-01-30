@@ -1,16 +1,22 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MapManager : MonoBehaviour
 {
 	public Character Character;
 	public Pin StartPin;
 	public Text SelectedLevelText;
-	
-	/// <summary>
-	/// Use this for initialization
-	/// </summary>
-	private void Start ()
+	public InputManager inputManager;
+    private void Awake()
+    {
+		inputManager = GetComponent<InputManager>();
+		inputManager.Button1PressedEvent += EnterLevel;
+    }
+    /// <summary>
+    /// Use this for initialization
+    /// </summary>
+    private void Start ()
 	{
 		// Pass a ref and default the player Starting Pin
 		Character.Initialise(this, StartPin);
@@ -35,23 +41,36 @@ public class MapManager : MonoBehaviour
 	/// </summary>
 	private void CheckForInput()
 	{
-		if (Input.GetKeyUp(KeyCode.UpArrow))
+		if (inputManager.Vertical > 0)
 		{
 			Character.TrySetDirection(Direction.Up);
 		}
-		else if(Input.GetKeyUp(KeyCode.DownArrow))
+		else if (inputManager.Horizontal < 0)
 		{
 			Character.TrySetDirection(Direction.Down);
 		}
-		else if(Input.GetKeyUp(KeyCode.LeftArrow))
+		else if (inputManager.Horizontal < 0)
 		{
 			Character.TrySetDirection(Direction.Left);
 		}
-		else if(Input.GetKeyUp(KeyCode.RightArrow))
+		else if (inputManager.Horizontal > 0)
 		{
 			Character.TrySetDirection(Direction.Right);
 		}
 	}
+
+	void EnterLevel()
+    {
+		try
+        {
+			if (Character.IsCurrentPinLevel())
+				SceneManager.LoadScene(Character.CurrentPin.SceneToLoad);
+		}
+		catch
+        {
+			print("Couldnt load scene");
+        }
+    }
 
 	
 	/// <summary>

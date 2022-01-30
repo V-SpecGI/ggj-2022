@@ -79,6 +79,7 @@ public class SpearShieldManager : MonoBehaviour
             return;
         }
         currentCoroutine = StartCoroutine(ShieldAnimation());
+        
         print("Shield");
     }
     IEnumerator ShieldAnimation()
@@ -86,14 +87,17 @@ public class SpearShieldManager : MonoBehaviour
         isShielding = true;
         print("Start Shield");
         BigShield.SetActive(true);
-        while(inputManager.Button1Held)
+        characterController.NewSpeedMod(.25f);
+        while (isShielding)
         {
             print(shieldMeter);
             shieldMeter -= Time.deltaTime * shieldDepletionRate;
+            isShielding = shieldMeter > 0 && inputManager.Button1Held;
             yield return null;
         }
+        characterController.NewSpeedMod(1f);
+        print("stop shield");
         currentCoroutine = null;
-        isShielding = false;
         BigShield.SetActive(false);
     }
     void ShieldBash()

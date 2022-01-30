@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 71569096}
   - component: {fileID: 71569095}
+  - component: {fileID: 71569097}
   m_Layer: 0
   m_Name: MapManager
   m_TagString: Untagged
@@ -155,6 +156,7 @@ MonoBehaviour:
   Character: {fileID: 1281524528}
   StartPin: {fileID: 448186163}
   SelectedLevelText: {fileID: 382609463}
+  inputManager: {fileID: 71569097}
 --- !u!4 &71569096
 Transform:
   m_ObjectHideFlags: 0
@@ -170,6 +172,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &71569097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71569094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4b249b14b15e5a4e8917c01da2933fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button1Held: 0
+  Button2Held: 0
+  _horizontal: 0
+  _vertical: 0
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &366480780
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,7 +527,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: Level 1
+  SceneToLoad: Level1
   UpPin: {fileID: 1492937566}
   DownPin: {fileID: 1447090199}
   LeftPin: {fileID: 0}
@@ -1789,7 +1808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: Level 2
+  SceneToLoad: Level2
   UpPin: {fileID: 0}
   DownPin: {fileID: 438028051}
   LeftPin: {fileID: 448186163}

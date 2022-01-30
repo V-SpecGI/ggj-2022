@@ -62,15 +62,6 @@ public partial class @InputController : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Button1Hold"",
-                    ""type"": ""Button"",
-                    ""id"": ""8a4caa3d-65af-438b-9fa1-71ff00c700e9"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press(behavior=2)"",
-                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -210,7 +201,7 @@ public partial class @InputController : IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""d05528b8-f34c-4a5b-9057-c5a4e7ed4182"",
                     ""path"": ""<Gamepad>/buttonEast"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Button1"",
@@ -221,7 +212,7 @@ public partial class @InputController : IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""d1516adf-4323-447b-83c2-d34010ae4a98"",
                     ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Button1"",
@@ -249,17 +240,6 @@ public partial class @InputController : IInputActionCollection2, IDisposable
                     ""action"": ""Button2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""3ecb2aff-ad86-4713-99e3-523d24a2bdb2"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Button1Hold"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -272,7 +252,6 @@ public partial class @InputController : IInputActionCollection2, IDisposable
         m_Gameplay_Swap = m_Gameplay.FindAction("Swap", throwIfNotFound: true);
         m_Gameplay_Button1 = m_Gameplay.FindAction("Button1", throwIfNotFound: true);
         m_Gameplay_Button2 = m_Gameplay.FindAction("Button2", throwIfNotFound: true);
-        m_Gameplay_Button1Hold = m_Gameplay.FindAction("Button1Hold", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -336,7 +315,6 @@ public partial class @InputController : IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_Swap;
     private readonly InputAction m_Gameplay_Button1;
     private readonly InputAction m_Gameplay_Button2;
-    private readonly InputAction m_Gameplay_Button1Hold;
     public struct GameplayActions
     {
         private @InputController m_Wrapper;
@@ -345,7 +323,6 @@ public partial class @InputController : IInputActionCollection2, IDisposable
         public InputAction @Swap => m_Wrapper.m_Gameplay_Swap;
         public InputAction @Button1 => m_Wrapper.m_Gameplay_Button1;
         public InputAction @Button2 => m_Wrapper.m_Gameplay_Button2;
-        public InputAction @Button1Hold => m_Wrapper.m_Gameplay_Button1Hold;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -367,9 +344,6 @@ public partial class @InputController : IInputActionCollection2, IDisposable
                 @Button2.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnButton2;
                 @Button2.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnButton2;
                 @Button2.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnButton2;
-                @Button1Hold.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnButton1Hold;
-                @Button1Hold.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnButton1Hold;
-                @Button1Hold.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnButton1Hold;
             }
             m_Wrapper.m_GameplayActionsCallbackInterface = instance;
             if (instance != null)
@@ -386,9 +360,6 @@ public partial class @InputController : IInputActionCollection2, IDisposable
                 @Button2.started += instance.OnButton2;
                 @Button2.performed += instance.OnButton2;
                 @Button2.canceled += instance.OnButton2;
-                @Button1Hold.started += instance.OnButton1Hold;
-                @Button1Hold.performed += instance.OnButton1Hold;
-                @Button1Hold.canceled += instance.OnButton1Hold;
             }
         }
     }
@@ -399,6 +370,5 @@ public partial class @InputController : IInputActionCollection2, IDisposable
         void OnSwap(InputAction.CallbackContext context);
         void OnButton1(InputAction.CallbackContext context);
         void OnButton2(InputAction.CallbackContext context);
-        void OnButton1Hold(InputAction.CallbackContext context);
     }
 }
