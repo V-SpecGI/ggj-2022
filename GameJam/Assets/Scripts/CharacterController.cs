@@ -12,21 +12,20 @@ public class CharacterController : MonoBehaviour
     private float _horizontal;
     private float _vertical;
     private float _moveLimiter = 0.7f;
+    public float SpeedModifier = 1;
     [SerializeField]private Vector2 _velocity = Vector2.zero;
 
     [SerializeField][Range(.01f,.5f)] float smoothTime = 0.2f;
     [SerializeField] [Range(.01f, 20)] private float runSpeed;
+    bool hasControl = true;
 
     Animator animator;
+    SpearShieldManager shieldManager;
     void Start()
     {
         input = GetComponent<InputManager>();
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-    }
-    private void Update()
-    {
-        
     }
     void LateUpdate()
     {
@@ -36,6 +35,8 @@ public class CharacterController : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if (!hasControl)
+            return;
         if (_horizontal != 0 && _vertical != 0) // Check for diagonal movement
         {
             // limit movement speed diagonally, so you move at 70% speed
@@ -44,8 +45,16 @@ public class CharacterController : MonoBehaviour
         }
         Vector2 targetVelocity = new Vector2(_horizontal * runSpeed, _vertical * runSpeed);
         _velocity = Vector2.SmoothDamp(body.velocity, targetVelocity, ref _velocity, smoothTime);
-        body.velocity = _velocity;
+        body.velocity = _velocity * SpeedModifier;
         SetAnimator();
+    }
+    public void NewSpeedMod(float newSpeed)
+    {
+        SpeedModifier = newSpeed;
+    }
+    public void DisableControl(bool On)
+    {
+        hasControl = On;
     }
     void SetAnimator()
     {
