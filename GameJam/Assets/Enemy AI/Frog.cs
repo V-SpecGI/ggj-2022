@@ -63,7 +63,7 @@ public class Frog : MonoBehaviour
                 pause = true;
                 //eat fly animation
                 System.Random rnd = new System.Random();
-                int index = rnd.Next(0,6);
+                int index = rnd.Next(0,5);
                 GameObject.Destroy(flies[index]);
                 flies.RemoveAt(index);
                 yield return new WaitForSeconds(0.5f);
