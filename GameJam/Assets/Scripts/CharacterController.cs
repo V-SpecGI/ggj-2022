@@ -8,7 +8,7 @@ public class CharacterController : MonoBehaviour
     public DirectionFacing Direction;
     public string[] AnimatorBoolNames;
     private Rigidbody2D body;
-    private PlayerInput input;
+    private InputManager input;
     private float _horizontal;
     private float _vertical;
     private float _moveLimiter = 0.7f;
@@ -20,7 +20,7 @@ public class CharacterController : MonoBehaviour
     Animator animator;
     void Start()
     {
-        input = GetComponent<PlayerInput>();
+        input = GetComponent<InputManager>();
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }

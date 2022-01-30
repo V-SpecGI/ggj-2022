@@ -6,12 +6,19 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
+    public static Health instance;
+
     public float health;
     public int numOfHearts;
     public Image[] hearts;
     public Sprite fullHeart; 
     public Sprite halfHeart;
     public Sprite emptyHeart;
+
+    private void Awake(){
+        instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,11 +31,14 @@ public class Health : MonoBehaviour
         if (health > numOfHearts) {
             health = numOfHearts;
         }
-
+        if(health <= 0){
+            die();
+            Destroy(gameObject);
+        }
         
         float remainder = health % 1;
 
-        if (remainder == 0) {
+        if(remainder == 0) {
             for (int i = 0; i < hearts.Length; i++) {
                 
                 if (i < health) {
@@ -63,7 +73,7 @@ public class Health : MonoBehaviour
         }
     }
     
-    void reduceHealth(double reduction) {
+    public void reduceHealth(double reduction) {
         if (reduction % 1 != 0) {
             reduction = Math.Truncate(reduction) + 0.5;
         }
@@ -74,7 +84,7 @@ public class Health : MonoBehaviour
     }
 
 
-    void increaseHealth(double increment) {
+    public void increaseHealth(double increment) {
         if (increment % 1 != 0) {
             increment = Math.Truncate(increment) + 0.5;
         }
@@ -84,8 +94,12 @@ public class Health : MonoBehaviour
         }
     }
 
-    float getHealth() {
+    public float getHealth() {
         return health;
     }
-    
+
+    private void die(){
+        LevelManager.instance.GameOver();
+        gameObject.SetActive(false);
+    }
 }
