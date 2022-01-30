@@ -19,6 +19,7 @@ public class Frog : MonoBehaviour
         StartCoroutine((FlyDrop()));
         StartCoroutine((EatFly()));
         pause = false;
+        health = 10;
     }
 
     void Update()
@@ -31,6 +32,9 @@ public class Frog : MonoBehaviour
         // please that if croak = true, then knockback.
         if (croak == false ) {
             // implement frog taking damage
+        }
+        if (health == 0) {
+            Destroy(Frog);
         }
     }
 
@@ -53,15 +57,16 @@ public class Frog : MonoBehaviour
     IEnumerator EatFly() {
         if (flyCount == 5) {
             while (flyCount > 0) {
+                yield return new WaitForSeconds(0.5f);
                 pause = true;
                 //eat fly animation
                 System.Random rnd = new System.Random();
                 int index = rnd.Next(0,6);
                 GameObject flyCurrent = flies[index] as GameObject;
                 Destroy(flyCurrent);
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(0.5f);
                 // throw fire projectile
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(0.5f);
                 flyCount -= 1;
             }
         }
