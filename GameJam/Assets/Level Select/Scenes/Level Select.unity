@@ -404,7 +404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: 
+  SceneToLoad: Level 3
   UpPin: {fileID: 1594292018}
   DownPin: {fileID: 0}
   LeftPin: {fileID: 459380740}
@@ -508,7 +508,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: Level 01
+  SceneToLoad: Level 1
   UpPin: {fileID: 1492937566}
   DownPin: {fileID: 1447090199}
   LeftPin: {fileID: 0}
@@ -897,7 +897,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: 
+  SceneToLoad: Coming Soon
   UpPin: {fileID: 0}
   DownPin: {fileID: 1366357333}
   LeftPin: {fileID: 1601697428}
@@ -986,7 +986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: I'm a water level
+  SceneToLoad: Coming Soon
   UpPin: {fileID: 1601697428}
   DownPin: {fileID: 0}
   LeftPin: {fileID: 0}
@@ -1616,7 +1616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: I'm Brian and so's my wife
+  SceneToLoad: Coming Soon
   UpPin: {fileID: 1366357333}
   DownPin: {fileID: 459380740}
   LeftPin: {fileID: 1220725974}
@@ -1789,7 +1789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: 
+  SceneToLoad: Level 2
   UpPin: {fileID: 0}
   DownPin: {fileID: 438028051}
   LeftPin: {fileID: 448186163}
@@ -1936,7 +1936,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: Some other Level
+  SceneToLoad: Coming Soon
   UpPin: {fileID: 0}
   DownPin: {fileID: 1220725974}
   LeftPin: {fileID: 0}
