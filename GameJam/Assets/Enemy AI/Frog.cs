@@ -53,6 +53,7 @@ public class Frog : MonoBehaviour
     IEnumerator EatFly() {
         if (flyCount == 5) {
             while (flyCount > 0) {
+                yield return new WaitForSeconds(0.5f);
                 pause = true;
                 //eat fly animation
                 System.Random rnd = new System.Random();
