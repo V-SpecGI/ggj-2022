@@ -177,7 +177,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 12.131305
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -201,7 +201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: -1.32, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9444,3 +9444,89 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5af205806678779429e60c68ab64560a, type: 3}
+--- !u!1001 &6910323227932884568
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3246464088685254160, guid: 8c0a9ebcf66ae7640bbe3d6c754ac409, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246464088685254160, guid: 8c0a9ebcf66ae7640bbe3d6c754ac409, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246464088685254160, guid: 8c0a9ebcf66ae7640bbe3d6c754ac409, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246464088685254160, guid: 8c0a9ebcf66ae7640bbe3d6c754ac409, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246464088685254160, guid: 8c0a9ebcf66ae7640bbe3d6c754ac409, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246464088685254160, guid: 8c0a9ebcf66ae7640bbe3d6c754ac409, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246464088685254160, guid: 8c0a9ebcf66ae7640bbe3d6c754ac409, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246464088685254160, guid: 8c0a9ebcf66ae7640bbe3d6c754ac409, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246464088685254160, guid: 8c0a9ebcf66ae7640bbe3d6c754ac409, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246464088685254160, guid: 8c0a9ebcf66ae7640bbe3d6c754ac409, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246464088685254160, guid: 8c0a9ebcf66ae7640bbe3d6c754ac409, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246464088685254160, guid: 8c0a9ebcf66ae7640bbe3d6c754ac409, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246464088685254160, guid: 8c0a9ebcf66ae7640bbe3d6c754ac409, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5041349899503554041, guid: 8c0a9ebcf66ae7640bbe3d6c754ac409, type: 3}
+      propertyPath: m_Name
+      value: Frog
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8c0a9ebcf66ae7640bbe3d6c754ac409, type: 3}
+--- !u!1 &6910323227932884569 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5041349899503554041, guid: 8c0a9ebcf66ae7640bbe3d6c754ac409, type: 3}
+  m_PrefabInstance: {fileID: 6910323227932884568}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6910323227932884570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6910323227932884569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddcb03e96a486b4f9a3af0c39a95d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fly: {fileID: 6438110355446095552, guid: 5693634e06e4c1f4b93bfb823f664cd7, type: 3}
+  xPos: 0
+  yPos: 0
+  flyCount: 0

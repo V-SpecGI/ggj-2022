@@ -1,0 +1,18 @@
+Frog AI:
+
+Flies will spawn at random spots. 5 at start and more as time progresses. Never have flyCount > 5.
+
+Frog eats random fly from flyArray. One at a time. When eaten, spit fireball projectile at character (make cody do this)
+
+If play hits frog when flyArray is not empty, player is pushed back. Croak animation.
+
+When flyArray is empty, player can hit frog and frog takes damage. (frog hearts?)
+
+Extra:
+After croak, spawn two more flies. Faster attacks.
+After second croak, spawn three more flies. Faster attakcks.
+For faster attack: increase projectile speed and decrease time before fly eat.
+
+Area:
+x range: -3 to 14
+y range: -11 to 7
